@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import QuestionCard from './components/QuestionCard/QuestionCard'; // Correct your import paths
-import ResultPage from './components/ResultsPage/ResultsPage'; // Correct your import paths
+import QuestionCard from './components/QuestionCard/QuestionCard';
+import ResultPage from './components/ResultsPage/ResultsPage';
 
 const TOTAL_QUESTIONS = 10;
 

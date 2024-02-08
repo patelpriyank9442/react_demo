@@ -1,8 +1,8 @@
 import axios, { AxiosError } from 'axios';
 
 export const fetchQuestion = async (): Promise<any> => {
-    let retries = 3; // Maximum number of retries
-    let delay = 1000; // Initial delay in milliseconds
+    let retries = 3;
+    let delay = 1000;
 
     const exponentialBackoff = async (retriesLeft: number, delay: number): Promise<any> => {
         try {

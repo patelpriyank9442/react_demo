@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchQuestion } from '../../api/triviaAPI';
-import './QuestionCard.css'; // Import the SCSS file for styling
+import './QuestionCard.css';
 
 interface QuestionCardProps {
   questionNumber: number;
@@ -20,12 +20,11 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   const [showResult, setShowResult] = useState<boolean>(false);
   const [isCorrectAnswer, setIsCorrectAnswer] = useState<boolean>(false);
   const [isOptionSelected, setIsOptionSelected] = useState<boolean>(false);
-  const [isLoading, setIsLoading] = useState<boolean>(false); // Adjusted to false initially
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  // Adjust useEffect to load a question only when needed
   useEffect(() => {
     loadQuestion();
-  }, []); // Removed dependencies to avoid reloading on these changes
+  }, []);
 
   const loadQuestion = async () => {
     try {
