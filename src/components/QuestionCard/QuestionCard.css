@@ -1,0 +1,98 @@
+.question-card {
+    padding: 2rem;
+    border: 2px solid #007bff; /* Primary blue */
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .question-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+  }
+  
+  h3 {
+    color: #007bff; /* Primary blue */
+    margin-bottom: 1rem;
+  }
+  
+  .options {
+    margin: 1rem 0;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type='radio'] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  label {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  label:hover {
+    color: #0056b3; /* Darker blue */
+  }
+  
+  button {
+    padding: 12px 24px; /* Increase button padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Success green */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #218838; /* Darker green */
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .answer-result {
+    margin-top: 1.5rem; /* Increase margin */
+    padding: 1.5rem; /* Increase padding */
+    background-color: #e9ecef; /* Light gray */
+    border-left: 5px solid; /* Dynamic based on result */
+    border-color: #28a745; /* Success green or #dc3545 for error */
+  }
+  
+  .explanation {
+    margin-top: 1rem; /* Increase margin */
+    color: #dc3545; /* Error red */
+  }
+  
+  /* Responsive Design */
+  
+  @media screen and (max-width: 768px) {
+    .question-card {
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    .option {
+      font-size: 1rem; /* Increase font size */
+    }
+  
+    button {
+      padding: 10px 20px; /* Increase button padding */
+      font-size: 1rem; /* Increase font size */
+    }
+  }
+  
